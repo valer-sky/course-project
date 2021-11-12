@@ -1,0 +1,85 @@
+.header
+    max-width: 
+.wrapper
+
+.menu__list
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-content: center
+    margin-left: -30px
+    li
+        
+        padding-right: 30px
+        not(:last-child)
+        list-style-type: none
+        display: block
+        color: #1C1B1B
+        height: 27px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+    a
+        text-decoration: none
+        color: #1C1B1B
+        font-size: 16px;
+        line-height: 26px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+    
+.header__logo
+    display: block
+    img
+        width: 80px
+        height: 25px
+        margin-top: 15px
+        margin-left: -150px
+.menu__icon
+    span, img
+        display: block
+        width: 20px
+        height: 20px
+        padding: 10px
+    li not(:last-child)
+    
+    display: flex
+    flex-direction: row
+    align-items: center
+    pading-left: 20px
+    margin-top: -15px
+    img > span
+        width: 30px
+        height: 30px
+
+
+.header__header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+@media (max-width: 1400px)
+    .menu__icon
+        margin-right: 70px
+@media (max-width: 1200px)
+    .menu__icon
+        margin-right: -70px
+@media (max-width: 992px)
+    .menu__icon
+        margin-right: -350px
+@media (max-width: 768px)
+    .menu__icon
+        margin-right: -100%
+@media (max-width: 576px)
+    .menu__icon
+        
+        margin-right: -150%
+    .header__logo
+        margin-left: 50% 
+         
+
+
+    
