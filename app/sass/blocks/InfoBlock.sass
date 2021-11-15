@@ -9,7 +9,7 @@
     margin-left: 18%
 .InfoBlock-block-title
     h3
-    font-family: Roboto;
+    font-family: $userfont
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -26,11 +26,29 @@
     line-height: 23px;
     text-align: center;
     display: block
-    
-    
-
-
     color: #000000;
+.InfoBlock-text
+    span
+        padding-top: 50%
+@media (max-width: 992px)
+    .InfoBlock-block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 1%
+@media (max-width: 768px)
+    .InfoBlock-block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: -10%
+        padding: 10px
+@media (max-width: 578px)
+    .InfoBlock-block
+        display: none
+        
+        
+
     
 
     
