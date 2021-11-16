@@ -48,6 +48,8 @@
         margin-bottom: 15px
         a
             text-decoration-line: underline;
+            margin-bottom: 120px
+
             
         color: #000000;
         span
@@ -77,11 +79,14 @@
     flex-wrap: nowrap
     justify-content: space-between
 
+    
+
 @media (max-width: 992px)
     .Ikons__block
         display: flex
         flex-direction: row
         flex-wrap: wrap
+        margin-left: 
     .Ikon__block-block
         &:last-child
             margin-left: 27%
@@ -91,12 +96,21 @@
         flex-direction: column
         justify-content: space-between
         align-items: center
+    .Ikon
+        margin-bottom: 50px 
+    
+
        
     .Ikon__block-block
         &:last-child
             margin-left: 1%
         &:ntn-child(2,3)
-            margin: -20px 0px
+            margin-top: 50px 
+@media (max-width: 576px)
+    .BlockIkons__block
+        margin-top: 300px
+    .Ikons__block
+        margin-top: -50px
             
 
 
