@@ -4,7 +4,7 @@
 // $fontsize: 16px // Body Font Size
 // $textcolor: #333 // Text Color
 // $lineheight: 1.65 // Document Line Height
-// $userfont: roboto-oh5, sans-serif // User Font Family
+$userfont: roboto-oh5, sans-serif // User Font Family
 // $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -24,12 +24,12 @@ $sm: 540px
 
 // FONTS LOAD SECTION
 
-// @mixin font($fname, $fstyle, $fweight, $furl)
-// 	@font-face
-// 		font-family: $fname
-// 		font-style: $fstyle
-// 		font-weight: $fweight
-// 		src: url($furl) format('woff2')
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
 
 @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
 @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
