@@ -1,15 +1,15 @@
 // USER VARIABLES SECTION
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
-$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+// $accent: orange // Accent Color
+// $fontsize: 16px // Body Font Size
+// $textcolor: #333 // Text Color
+// $lineheight: 1.65 // Document Line Height
+// $userfont: roboto-oh5, sans-serif // User Font Family
+// $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px
-$gutter: $grid-gutter-width
+// $grid-gutter-width: 30px
+// $gutter: $grid-gutter-width
 
 $xxl: 1320px
 $xl: 1140px
@@ -18,18 +18,18 @@ $md: 720px
 $sm: 540px
 
 // IMPORT SECTION
-
+@import 'reset.scss'
 
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
 
-@mixin font($fname, $fstyle, $fweight, $furl)
-	@font-face
-		font-family: $fname
-		font-style: $fstyle
-		font-weight: $fweight
-		src: url($furl) format('woff2')
+// @mixin font($fname, $fstyle, $fweight, $furl)
+// 	@font-face
+// 		font-family: $fname
+// 		font-style: $fstyle
+// 		font-weight: $fweight
+// 		src: url($furl) format('woff2')
 
 @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
 @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
@@ -38,19 +38,19 @@ $sm: 540px
 
 // GENERAL DOCUMENT STYLES
 
-::placeholder
-	color: #666
+// ::placeholder
+// 	color: #666
 
-::selection
-	background-color: $accent
-	color: #fff
+// ::selection
+// 	background-color: $accent
+// 	color: #fff
 
-input, textarea
-	outline: none
-	&:focus:required:invalid
-		border-color: red
-	&:required:valid
-		border-color: green
+// input, textarea
+// 	outline: none
+// 	&:focus:required:invalid
+// 		border-color: red
+// 	&:required:valid
+// 		border-color: green
 
 body
 	font-family: $userfont
