@@ -28,6 +28,12 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
+.menu__link  
+    &:hover
+        font-size: 18px;
+        transition: 0.4s
+
+        
     
 .header__logo
     display: block
@@ -38,20 +44,31 @@
         margin-left: -150px
 .menu__icon
     span, img
-        display: block
+        display: inline-block
         width: 20px
         height: 20px
+        line-height: 20px
         padding: 10px
-    li not(:last-child)
     
+    img
+        width: 20px
+        height: 20px
+        line-height: 20px
+        nth(:last-child)
+    &:hover
+        img
+            width: 22px
+            height: 22px
+
+
     display: flex
     flex-direction: row
     align-items: center
     pading-left: 20px
     margin-top: -15px
     img > span
-        width: 30px
-        height: 30px
+        width: 50px
+        height: 50px
 // стилизация поиска (search)
 .search-box
     margin-top: 60px
@@ -95,6 +112,8 @@
 .search-box
     &:hover > .search-btn
         background: #FFFFFF;
+       
+        
 // 
 
 
