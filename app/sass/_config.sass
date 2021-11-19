@@ -1,10 +1,10 @@
 // USER VARIABLES SECTION
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-// $accent: orange // Accent Color
+$accent: orange // Accent Color
 // $fontsize: 16px // Body Font Size
-// $textcolor: #333 // Text Color
-// $lineheight: 1.65 // Document Line Height
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
 $userfont: roboto-oh5, sans-serif // User Font Family
 // $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
@@ -29,7 +29,7 @@ $sm: 540px
 	@font-face
 		font-family: $fname
 		font-style: $fstyle
-		font-weight: $fweight
+		// font-weight: $fweight
 		src: url($furl) format('woff2')
 
 @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
@@ -54,11 +54,11 @@ $sm: 540px
 // 		border-color: green
 
 body
-	font-family: $userfont
-// 	font-size: $fontsize
-// 	line-height: $lineheight
-// 	color: $textcolor
-	
+	// font-family: $userfont
+	// font-size: $fontsize
+	// line-height: $lineheight
+	color: $textcolor
+	margin: 0
 
 // button
 h3

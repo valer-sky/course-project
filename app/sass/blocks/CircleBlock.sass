@@ -1,0 +1,60 @@
+.CircleBlock__block
+    margin-top: 150px
+    position: relative
+
+.circle__block
+    width: 250px
+    height: 200px
+    transform: translate(-50%, -50%)
+    margin-top: 150px
+    
+.circle
+    width: 70px
+    height: 70px
+    margin: auto
+.c1, .c2
+    display: block
+    width: 70px
+    height: 70px
+    position: absolute
+    border-radius: 50%
+    opacity: 0.6
+    animation: c 2s infinite ease-in-out
+.c2
+    animation-delay: -1s
+
+@keyframes c
+    0%, 100%
+        transform: scale(0)
+    50%
+        transform: scale(1)
+.CircleBlock__title
+    h3
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+.circle__text
+    p
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+    margin-top: 10px
+.circle__block__block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center;
+    margin-left: 220px
+@media (max-width: 768px)
+    .CircleBlock__block
+        display: none
+    
+    
+    
