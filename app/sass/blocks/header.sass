@@ -9,7 +9,7 @@
     margin-left: -30px
     li
         
-        padding-right: 30px
+        padding-right: 10px
         not(:last-child)
         list-style-type: none
         display: block
@@ -33,18 +33,33 @@
         font-size: 18px;
         transition: 0.4s
 
-        
+.bag 
+    i
+        width: 20px
+        height: 20px
+        color: #000000
+        padding: 0 15px
+        pad
+.instag
+    img
+    padding: 
+
+
     
 .header__logo
     display: block
+    padding: 20px
     img
-        width: 80px
+        diplay: flex
+        align-items: center
+        justify-content: center
+        
         height: 25px
         margin-top: 15px
-        margin-left: -150px
+        margin-left: -200px
 .menu__icon
     span, img
-        display: inline-block
+        display: block
         width: 20px
         height: 20px
         line-height: 20px
@@ -53,35 +68,41 @@
     img
         width: 20px
         height: 20px
+        padding: 1px
         line-height: 20px
         nth(:last-child)
-    &:hover
-        img
-            width: 22px
-            height: 22px
+    // &:hover
+    //     img
+    //         width: 22px
+    //         height: 22px
 
 
     display: flex
     flex-direction: row
     align-items: center
-    pading-left: 20px
-    margin-top: -15px
+    padding-left: 50px
+    margin-top: 15px
+    margin-right: 20px
     img > span
         width: 50px
         height: 50px
 // стилизация поиска (search)
 .search-box
+    display: block
     margin-top: 60px
     margin-right: -50%
     position: absolute
-    transform: translate(-100%, -50%)
+    transform: translate(-120%, -100%)
     background: #FFFFFF;
     height: 20px
     border-radius: 20px
+    margin-top: 25px
+    margin-right: -20px
     // border: 1px solid black
     
     padding: 10px
 .search-btn
+    display: block
     color: #000000
     float: right
     width: 20px
@@ -92,7 +113,7 @@
     justify-content: center
     align-items: center
     text-decoration: none
-    transition: 0.4s
+    transition: 0.6s
 
 .search-txt
     border: none
@@ -102,13 +123,14 @@
     padding: 0
     color: #000000
     font-size: 16px
-    transition: 0.4s
+    transition: 0.8s
     line-height: 20px
     width: 0px
 .search-box
     &:hover > .search-txt
         width: 120px
         padding: 0 6px
+        border-bottom: 1px solid #000000
 .search-box
     &:hover > .search-btn
         background: #FFFFFF;
@@ -124,20 +146,25 @@
     justify-content: space-between
     align-items: center
 
-@media (max-width: 1400px)
+
+@media (max-width: 1030px)
     .menu__icon
-        margin-right: 70px
-@media (max-width: 1200px)
-    .menu__icon
-        margin-right: -2%
+        margin-right: 2%
 @media (max-width: 992px)
     .menu__icon
-        margin-right: -3%
+        margin-left: 10%
     .header__logo
-        margin-left: 20% 
+        margin-left: 35%
+@media (max-width: 906px)
+    .menu__icon
+        margin-left: 1%
+    .menu__list
+        li
+            margin-left: 1px
+            not(:first-child)
 @media (max-width: 768px)
     .menu__icon
-        margin-right: -1%
+        margin-left: -10%
 @media (max-width: 576px)
     .menu__icon
         
