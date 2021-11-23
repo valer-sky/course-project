@@ -1,5 +1,25 @@
  
 .wrapper
+.show-menu-btn, .hide-menu-button
+    transition: 0.4s
+    font-size: 30px
+    cursor: pointer
+#chk
+    position: absolute
+    visibility: hidden
+    z-index: -1111
+.show-menu-btn
+    float: left
+.show-menu-btn
+    i
+        line-height: 100px
+
+.menu__list
+    a:hover, 
+    .show-menu-btn:hover,
+    .hide-menu-btn:hover
+        color: red
+
 
 .menu__list
     display: flex
@@ -7,9 +27,10 @@
     justify-content: flex-start
     align-content: center
     margin-left: -30px
+    float: left
     li
         
-        padding-right: 10px
+        padding: 0 px
         not(:last-child)
         list-style-type: none
         display: block
@@ -20,6 +41,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 28px;
+        transition: 0.4s
     a
         text-decoration: none
         color: #1C1B1B
@@ -30,7 +52,7 @@
         font-weight: bold;
 .menu__link  
     &:hover
-        font-size: 18px;
+        font-size: 16px;
         transition: 0.4s
 
 .bag 
@@ -165,12 +187,55 @@
 @media (max-width: 768px)
     .menu__icon
         margin-left: -10%
-@media (max-width: 576px)
-    .menu__icon
+@media screen and (max-width: 576px)
+    .show-menu-btn, .hide-menu-button
+        display: block
+    .header__header
         
-        margin-right: -150%
+        width: 100%
+        height: 50vh
+        background: rgba(204, 204, 204, 0.6);
+        left: 0
+        top: 0
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        text-align: center
+        padding: -10px 0
+    #chk:checked ~ .menu__list
+        right: 0
+    .menu__list
+        a
+        display: block
+        text-align: center
     .header__logo
-        margin-left: 50% 
+        display: flex
+        
+        text-align: center
+        transform: translate(125%, -25%)
+    .menu__icon
+        margin-bottom: 50px
+        margin-left: -40px
+    .search-box, .search-btn, .search-txt
+        background: rgba(204, 204, 204, 0.6);
+    .search-box
+        margin-top: 40px
+    .search-btn
+        margin-top: -10px
+@media(max-width: 466px)
+    .header__logo
+        display: none
+    
+        
+
+        
+
+
+    // .menu__icon
+        
+    //     margin-right: -150%
+    // .header__logo
+    //     margin-left: 50% 
          
 
 
