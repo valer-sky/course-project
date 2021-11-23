@@ -1,23 +1,25 @@
  
 .wrapper
-.show-menu-btn, .hide-menu-button
+.show-menu-btn, .hide-menu-btn
+    
     transition: 0.4s
     font-size: 30px
     cursor: pointer
+    display: none
 #chk
     position: absolute
     visibility: hidden
     z-index: -1111
 .show-menu-btn
-    float: left
+    float: right 
 .show-menu-btn
     i
-        line-height: 100px
+        margin-top: 10px
+        margin-left: -30px
 
 .menu__list
     a:hover, 
-    .show-menu-btn:hover,
-    .hide-menu-btn:hover
+    .show-menu-btn:hover, .hide-menu-btn:hover
         color: red
 
 
@@ -26,11 +28,11 @@
     flex-direction: row
     justify-content: flex-start
     align-content: center
-    margin-left: -30px
-    float: left
+    margin-top: 10px
+    
     li
         
-        padding: 0 px
+        padding:
         not(:last-child)
         list-style-type: none
         display: block
@@ -39,7 +41,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 28px;
         transition: 0.4s
     a
@@ -50,6 +52,8 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
+        padding:  0 5px
+        transition: 0.4s
 .menu__link  
     &:hover
         font-size: 16px;
@@ -188,20 +192,23 @@
     .menu__icon
         margin-left: -10%
 @media screen and (max-width: 576px)
-    .show-menu-btn, .hide-menu-button
+    .hide-menu-btn
         display: block
     .header__header
         
         width: 100%
-        height: 50vh
+        height: 100vh
         background: rgba(204, 204, 204, 0.6);
-        left: 0
-        top: 0
+        
         display: flex
         flex-direction: column
+        flex-wrap: wrap
         justify-content: flex-start
         text-align: center
         padding: -10px 0
+    .menu__list
+        display: flex
+        flex-direction: column
     #chk:checked ~ .menu__list
         right: 0
     .menu__list
