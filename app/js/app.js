@@ -10,44 +10,44 @@
 // "use strict"
 // стрелочное меню
 
-const isMobile = {
-	Android: function () {
-		return navigator.userAgent.match(/Android/i);
-	},
-	BlackBerry: function () {
-		return navigator.userAgent.match(BlackBerry/i);
-	},
-	iOS: function () {
-		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-	},Opera: function () {
-		return navigator.userAgent.match(/Opera Mini/i);
-	},Windows: function () {
-		return navigator.userAgent.match(/IEMobile/i);
-	},
-	any: function () {
-		return(
-			isMobile.Android() ||
-			isMobile.BlackBerry() ||
-			isMobile.iOS() ||
-			isMobile.Opera() ||
-			isMobile.Windows());
-	}
-};
-if (isMobile.any()) {
-	document.body.classList.add('_touch');
-  let menuArrows = document.querySelectorAll('.menu__arrow');
-  if (menuArrows.length > 0) {
-	  for(let index = 0; index < menuArrows.length; index++) {
-		  const menuArrow = menu[index];
-		  menuArrow.addEventListener("click", function(e) {
-			  menuArrow.parentElement.classList.toggle('_acrive');
-		  });
-	  }
+// const isMobile = {
+// 	Android: function () {
+// 		return navigator.userAgent.match(/Android/i);
+// 	},
+// 	BlackBerry: function () {
+// 		return navigator.userAgent.match(BlackBerry/i);
+// 	},
+// 	iOS: function () {
+// 		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+// 	},Opera: function () {
+// 		return navigator.userAgent.match(/Opera Mini/i);
+// 	},Windows: function () {
+// 		return navigator.userAgent.match(/IEMobile/i);
+// 	},
+// 	any: function () {
+// 		return(
+// 			isMobile.Android() ||
+// 			isMobile.BlackBerry() ||
+// 			isMobile.iOS() ||
+// 			isMobile.Opera() ||
+// 			isMobile.Windows());
+// 	}
+// };
+// if (isMobile.any()) {
+// 	document.body.classList.add('_touch');
+//   let menuArrows = document.querySelectorAll('.menu__arrow');
+//   if (menuArrows.length > 0) {
+// 	  for(let index = 0; index < menuArrows.length; index++) {
+// 		  const menuArrow = menu[index];
+// 		  menuArrow.addEventListener("click", function(e) {
+// 			  menuArrow.parentElement.classList.toggle('_acrive');
+// 		  });
+// 	  }
 
-  }
-} else {
-	document.body.classList.add('_pc');
-}
+//   }
+// } else {
+// 	document.body.classList.add('_pc');
+// }
 
 
 // Меню бургер
@@ -91,7 +91,7 @@ if (menuLinks.length > 0) {
 }
 	
 //timer
-const deadline = '2021-11-30';
+const deadline = '2021-12-31';
 
 function getTimeRemaining(endtime) {
 	const t = Date.parse(endtime) - Date.parse(new Date()),
