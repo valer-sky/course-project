@@ -1,7 +1,7 @@
- 
 .wrapper
 .body._lock
-    overflow: hidden
+    overflow: hidden 
+    // для бургера меню
 .header .wrapper
     display: flex
     width: 100%   
@@ -17,8 +17,6 @@
     align-items: center
     margin: 0 auto
     justify-content: space-between;
-    
-    
 .header__block
     width: 100%
     display: flex
@@ -39,19 +37,13 @@
     img
     padding: 0 10px
 
-
-    
 .header__logo
     display: block
-    padding: 20px
+    padding: 
     img
         diplay: flex
         align-items: center
         justify-content: center
-        
-//         height: 25px
-//         margin-top: 15px
-//         margin-left: -200px
 .menu__icon-left
     span, img
         display: block
@@ -66,9 +58,6 @@
         padding: 1px
         line-height: 20px
         nth(:last-child)
-    
-
-
     display: flex
     flex-direction: row
     align-items: center
@@ -127,16 +116,17 @@
     &:hover > .search-btn
         background: #FFFFFF;
        
+// стилизация поиска (search)
 
 .header__logo
-    
     img
         position: relative
         z-index: 5
-        
         height: 25px
         diplay: flex
         justify-content: center
+
+// стилизация меню бургер
 .menu__list > li
         position: relative
         margin: 0px 0px 0px 20px
@@ -153,8 +143,6 @@
     &:hover
         text-decoration: underline
 
-
-    
 .menu__sub-list
     position: absolute
     top: 50%
@@ -189,23 +177,23 @@
     display: none
 
 /*---------------------*/
-// body._pc .menu__list > li:hover .menu__sub-list
-.menu__list > li:hover .menu__sub-list
+body._pc .menu__list > li:hover .menu__sub-list
+// .menu__list > li:hover .menu__sub-list
     opacity: 1
     visibility: visible
     transform: translate(0px, 0px)
     pointer-events: all
-// body._touch .menu__list > li
-.menu__list > li
+body._touch .menu__list > li
+// .menu__list > li
     display: flex
     align-items: center
-// body._touch .menu__link
-.menu__link
+body._touch .menu__link
+// .menu__link
     flex: 1 1 auto
 
 
-// body._touch .menu__arrow
-.menu__arrow
+body._touch .menu__arrow
+
     display: block
     width: 0
     height: 0
@@ -214,14 +202,12 @@
     border-left: 5px solid transparent 
     border-right: 5px solid  transparent 
     border-top: 10px solid black
-body._touch .menu__list > li:hover .menu__sub-list   
-// .menu__list > li._active .menu__sub-list
+body._touch .menu__list > li._active .menu__sub-list
     opacity: 1
     visibility: visible
     transform: translate(0px, 0px)
     pointer-events: all
-body._touch .menu__list > li:hover .menu__sub-list 
-// .menu__list > li._active .menu__arrow
+body._touch .menu__list > li._active .menu__arrow
     transform: rotate(-180deg)
 
     
@@ -267,7 +253,16 @@ body._touch .menu__list > li:hover .menu__sub-list
         position: fixed
         top: 8%
         left: 6%
-    .menu__list
+    .menu__icon._active
+        span
+            transform: scale(0) translate(0px, -50%)
+    .menu__icon._active::before
+        top: 50%
+        transform: rotate(-45deg) translate(0px, -50%)
+    .menu__icon._active::after
+        top: 50%
+        transform: rotate(45deg) translate(0px, 50%)
+
            
     .menu__icon span, .menu__icon::before, .menu__icon::after 
         left: 0
