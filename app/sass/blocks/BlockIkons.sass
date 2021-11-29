@@ -1,0 +1,128 @@
+.BlockIkons__block
+    margin-top: 70px
+    height: 800px;
+.Ikon
+    img
+        position: absolute
+        width: 310px;
+        height: 420px;
+    perspective: 1000px
+    position: relative
+.front
+    position: absolute
+    transition: 1s
+    backface-visibility: hidden
+    border-radius: 10px
+
+.back
+    position: absolute
+    transform: rotateY(180deg)
+    transition: 1s
+    backface-visibility: hidden
+    border-radius: 10px
+.Ikon
+    &:hover .front
+        transform: rotateY(180deg)
+
+.Ikon
+    &:hover .back
+        transform: rotateY(360deg)
+
+
+.Ikon__text
+    width: 156px;
+    height: 120px;
+    p, span, a
+        display: block
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 15px
+        a
+            text-decoration-line: underline;
+            margin-bottom: 120px
+        color: #000000;
+        span
+            margin-bottom: 10px
+        
+.Ikon__text
+    position: 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    margin-left: 25%
+    margin-top: 430px
+.Ikon__block-block
+    position: relative
+    width: 310px;
+    height: 620px;
+    display: flex
+    margin-top: 60px
+
+.Ikons__block
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+
+    
+
+@media (max-width: 992px)
+    .Ikons__block
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        margin-left: 
+    .Ikon__block-block
+        &:last-child
+            margin-left: 27%
+@media (max-width: 768px)
+    .Ikons__block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    .BlockIkons__block
+        margin-top: 200px
+    .Ikon
+        margin-bottom: 50px 
+    
+    .Ikon__block-block
+        &:last-child
+            margin-left: 1%
+        &:ntn-child(2,3)
+            margin-top: 50px 
+@media (max-width: 576px)
+    .BlockIkons__block
+        margin-top: 300px
+@media (max-width: 370px)
+    .BlockIkons__block
+        margin-top: 170%
+    .Ikons__block
+        margin-left: -4%
+
+    
+            
+
+
+
+
+        
+    
+        
+        
+        
+        
+        
+
+
+    
+
+
+
+
+
