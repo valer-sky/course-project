@@ -47,8 +47,8 @@
 .menu__icon-left
     span, img
         display: block
-        width: 20px
-        height: 20px
+        width: 25px
+        height: 25px
         line-height: 20px
     img
         width: 20px
@@ -63,8 +63,8 @@
     margin-top: 5px
     margin-right: 60px
     img > span
-        width: 50px
-        height: 50px
+        width: 55px
+        height: 55px
 // стилизация поиска (search)
 .search-box
     display: block
@@ -222,14 +222,23 @@ body._touch .menu__list > li._active .menu__arrow
         li 
             padding: 10px 0px
 @media (max-width: 992px)
+    .search-box
+        display: none  
     .header__logo
-        margin-left: -55px
+        margin-left: -5px
     .menu__icon-left
-        margin-right: 50px
+        margin-right: -5px
         padding-bottom: 10px
     
     
 @media (max-width: 768px)
+    // .search-box
+    //     display: none
+    .header__logo
+        display: flex
+        justify-content: center
+        align-items: center         
+            
     .header__block
         display: flex
         justify-content: space-evenly
@@ -247,7 +256,7 @@ body._touch .menu__list > li._active .menu__arrow
         cursor: pointer
         // margin-top: -25px
         position: fixed
-        top: 4%
+        top: 5%
         left: 5%
     .menu__icon._active
         span
@@ -283,7 +292,7 @@ body._touch .menu__list > li._active .menu__arrow
         z-index: 99
         left: -100%
         width: 100%
-        height: 80%
+        height: 100%
         // transform: translate(-100%, 0px)
         background-color: #cfcece
         padding: 40px 30px 30px 60px
@@ -315,14 +324,37 @@ body._touch .menu__list > li._active .menu__arrow
     .menu__sub-link
         color: #020202;
         font-size: 15px
-@media (max-width: 688px)
+   
+
+@media (max-width: 705px)
+   
     .header__block
         display: flex
-        margin-left: 90px
+        margin-left: 150px
         margin-right: 
     .menu__icon-left
-        margin-right: 00px
+        margin-right: 0px
         padding-bottom: 5px
+@media (max-width: 705px)
+    .header__block
+        margin-left: 100px
+    .menu__icon-left
+        margin-right: 10px
+
+
+
+
+
+            
+            
+   
+
+        
+    
+           
+        
+
+
 
 
         
