@@ -48,6 +48,21 @@
 // } else {
 // 	document.body.classList.add('_pc');
 // }
+// скролл???
+// function scrollTo(element) {
+// 	window.scroll({
+// 		left: 0,
+// 		bottom: element.offsetHeight,
+// 		behavior:"smooth"
+// 	})
+// }
+// let button = document.querySelector('.arrowUp');
+// let header = document.querySelector('#header');
+
+// button.addEventListener('.click', () => {
+// 	scrollTo(header);
+	
+// })
 
 
 // Меню бургер
