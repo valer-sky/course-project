@@ -5,12 +5,12 @@
 
 .FirstSection__block
     
-    height: 615px;
+    height: 645px;
     background: #F0EFEB;
-    padding-top: 20px
+    padding-top: 40px
 .block__info
     
-    height: 554px;
+    height: 600px;
     background: #F0EFEB;
     display: flex
     flex-direction: column
@@ -21,19 +21,19 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 70px;
+    font-size: calc(20px + (30 - 10) * ((100vw -320px) / (1080-320)))
+    line-height: 80px;
     color: #000000;
 .block__info-text 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: calc(16px + (28 - 12) * ((100vw -320px) / (1080-320)))
+    line-height: 32px;
     color: #000000;  
 .block__info-button
     &:btn
-    
+    margin-top: 20px
     width: 160px
     height: 40px;
     background: #000000;
